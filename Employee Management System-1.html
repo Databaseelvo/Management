@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<style>
+    header{
+        background-color: rgb(0, 225, 255);
+        color: #af564c; 
+        text-align: center;
+        padding: 1rem;
+        margin-top: -1rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    nav{
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+       
+    }
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 0.5rem;
+    }
+    nav ul li{
+        margin: 0;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+    main{
+        padding: 2rem;
+    }
+    section{
+        background-color: white;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow:0 2px 5px blue;
+    }
+    h2{
+        color: #333;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    form label{
+        font-size: 1rem;
+    }
+    form input{
+        padding: 0.5rem;
+        border: 1 px solid #CCC;
+        border-radius: 5px;
+        
+    }
+    button{
+        background-color: rgb(0, 225, 255);;
+        color:#af564c;
+        padding: 0.7rem;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #4CAF50;
+    }
+    footer{
+        text-align: center;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+    }
+</style>
+<body>
+   <header>
+    <h1>Employee Management System</h1>
+   </header> 
+   <nav>
+    <ul>
+        <li><a href="#registrarion">Registration</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#finance">Finance</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#procurement">Procurement</a></li>
+        <li><a href="#leave">Leave</a></li>
+    </ul>
+   </nav>
+   <main>
+    <section id="registration">
+<h2>Registration</h2>
+<form action="dashboard.html" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="name" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="email" required>
+
+    <label for="contact">Contact Number</label>
+    <input type="tel" id="contact" name="contact" required>
+
+    <label for="password" id="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="password" required>
+<!-- Submit Button -->
+<button type="submit"> <a href="dashboard.html"></a>Register</button>
+</form>
+    </section>
+    <section id="login">
+        <form action="">
+<h2>Login</h2>
+<label for="email">Email:</label>
+<input type="text" id="email" name="email" placeholder="email">
+
+<label for="password">Password:</label>
+<input type="text" id="password" name="password" placeholder="password">
+
+<button type="submit" > <a href="dashboard.html"></a>Login</button>
+</form>
+    </section>
+
+    <section id="finance">
+<h2>Finance</h2>
+<p>Manage employee salaries, bonuses, and other financial details here.</p>
+    </section>
+
+    <section id="departments">
+        <h2>Departments</h2>
+        <p>View and Manage company departments and their members.</p>
+    </section>
+    <section id="procurement">
+        <h2>Procurement</h2>
+        <p>Track and manage procurement activities for the organization.</p>
+    </section>
+    <section id="leave">
+        <h2>Leave</h2>
+        <p>Apply for and manage employee leave activities.</p>
+    </section>
+   </main>
+   <footer>
+    <p>coded by <b>Elvis</b></p>
+    <p>&copy; 2024 Employee Management System.</p>
+   </footer>
+</body>
+</html>
